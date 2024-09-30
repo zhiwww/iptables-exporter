@@ -3,7 +3,7 @@ FROM ubuntu:noble
 
 # Requirements
 RUN    apt-get update \
-    && apt-get install -y iptables python3-iptables python3-prometheus-client \
+    && apt-get install -y iptables python3-iptables python3-prometheus-client python3-setuptools \
     && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 9119
